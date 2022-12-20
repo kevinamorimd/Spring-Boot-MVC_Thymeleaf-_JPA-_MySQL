@@ -25,7 +25,7 @@ public class Pessoa implements Serializable{
 		Id = id;
 	}
 	public String getNome() {
-		return nome;
+		return nome
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
