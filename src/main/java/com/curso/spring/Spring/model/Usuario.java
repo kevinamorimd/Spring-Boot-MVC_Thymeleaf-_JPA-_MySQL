@@ -14,11 +14,27 @@ public class Usuario implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	private String login;
 	private String nome;
 	private String senha;
+	
+	
+	
+	
+	public Usuario(long id, String login, String nome, String senha) {
+		super();
+		this.id = id;
+		this.login = login;
+		this.nome = nome;
+		this.senha = senha;
+	}
+	
+	public Usuario () {
+		
+	}
+	
 	
 	public long getId() {
 		return id;
